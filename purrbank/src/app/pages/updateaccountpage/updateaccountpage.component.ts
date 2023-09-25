@@ -65,7 +65,7 @@ export class UpdateaccountpageComponent implements OnInit {
             .subscribe(
                 (data: any) => {
                     this.busy = false;
-                    this.toastr.success(data.message, 'Cadastro atualizado com sucesso!');
+                    this.toastr.success('Cadastro atualizado com sucesso!');
                     this.router.navigate(['accountmainpage']);
                 }
             );
